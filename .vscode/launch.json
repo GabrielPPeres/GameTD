@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Jogar (Edge + depurador)",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "vite: dev"
+    },
+    {
+      "name": "Jogo original (4,8 KB)",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:5173/original/index.html",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "vite: dev"
+    }
+  ]
+}

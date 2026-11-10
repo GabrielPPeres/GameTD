@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "vite: dev",
+      "type": "shell",
+      "command": "npx vite --open false",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "vite",
+        "pattern": { "regexp": "^x^" },
+        "background": { "activelyMatches": true, "beginsPattern": "VITE", "endsPattern": "Local:" }
+      }
+    },
+    {
+      "label": "testes",
+      "type": "shell",
+      "command": "npm test",
+      "group": { "kind": "test", "isDefault": true }
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "npm run build",
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}
